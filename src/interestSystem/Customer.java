@@ -1,4 +1,6 @@
-interface bank{
+package interestSystem;
+
+interface Bank{
     int getFdInterestRates();
     int getLoanInterestRate();
     void getEstimateFdInterestAmount(int a);
@@ -6,7 +8,7 @@ interface bank{
 }
 
 
-class hdfc implements bank{
+class Hdfc implements Bank{
     public int getFdInterestRates(){
         return 6;
     }
@@ -24,7 +26,7 @@ class hdfc implements bank{
         System.out.println("If the estimated amount is 20000 then you will be paying total "+ afterInterest  + " within 1 year");
     }
 }
-class sbi implements bank{
+class Sbi implements Bank{
     public int getFdInterestRates(){
         return 5;
     }
@@ -43,10 +45,10 @@ class sbi implements bank{
     }
 }
 
-public class customer{
+public class Customer{
     public static void main(String[] args) {
-        sbi sbi = new sbi();
-        hdfc hdfc = new hdfc();
+        Sbi sbi = new Sbi();
+        Hdfc hdfc = new Hdfc();
         int estimateAmount = 20000;
         int sbiFdRate = sbi.getFdInterestRates();
         int sbiLoanRate = sbi.getLoanInterestRate();
