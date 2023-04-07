@@ -1,7 +1,7 @@
-package com.interestSystem;
+package com.interest;
 
-import com.interestSystem.bank.Hdfc;
-import com.interestSystem.bank.Sbi;
+import com.interest.system.bank.Hdfc;
+import com.interest.system.bank.Sbi;
 
 
 public class Customer {

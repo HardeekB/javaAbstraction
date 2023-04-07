@@ -1,4 +1,4 @@
-package com.interestSystem.bank;
+package com.interest.system.bank;
 
 public interface Bank {
     int getFdInterestRates();
