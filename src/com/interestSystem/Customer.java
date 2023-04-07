@@ -1,4 +1,4 @@
-package com.interestSystem.main;
+package com.interestSystem;
 
 import com.interestSystem.bank.Hdfc;
 import com.interestSystem.bank.Sbi;
